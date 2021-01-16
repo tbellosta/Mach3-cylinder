@@ -17,6 +17,7 @@ The following images report the Temperature, Pressure, Mach and Density fields o
 ![](FIGS/Pres.png)
 ![](FIGS/Mach.png)
 ![](FIGS/Rho.png)
+![](FIGS/Vort.png)
 
 ## References
 Matthias Maier and Martin Kronbichler. 2020. Massively parallel 3D computation of the compressible Euler equations with an invariant-domain preserving second-order finite-element scheme. 1, 1 (July 2020), 29 pages.
