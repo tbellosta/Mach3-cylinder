@@ -8,7 +8,7 @@ A uniform supersonic flow with Mach = 3, P = 100000 Pa and T = 300 K is imposed 
 The FVM was used to discretize the 2D Euler equations with the approximate Riemann solver HLLC to compute the convective fluxes. Second order in space accuracy is obtained by linearly extrapolating the primitive variables via a MUSCL scheme. A Venkatakrishnan-Wang slope limiter was employed to avoid spurious oscillations by limiting the primitive variables change. A dual time stepping scheme was used to solve the unsteady Euler equations. A BDF2 scheme was used to discretize the resulting ODE yielding a second order time accurate scheme. At each time step an additional dependency on a pseudo-time is added to reduce the residual and allow for larger time steps. The pseudo-time derivative is discretized via an impicit Euler scheme and solved to steady state using local time-stepping to accelerate convergence. The CFL number used in pseudo-time iteration was set to CFL = 10. The resulting sparse linear system was solved iteratively via the FGMRES solver.
 
 ## Transient Results
-A Karman-like shedding behaviour develops after a transient phase reported in the animation below. The animation shows a Schlieren-like image of the flow-field obtained by computing the magnitude of the density of the fluid.
+A Karman-like shedding behaviour develops after a transient phase reported in the animation below. The animation shows a Schlieren-like image of the flow-field obtained by computing the magnitude of the density gradient of the fluid.
 ![](FIGS/animation.gif)
 
 ## Developed Flow
